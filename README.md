@@ -17,11 +17,7 @@
 
 ## System Running Architecture
 
-<p align="center">
-<img src="images/STM32F407_Cortex-M4%20.png"
-     alt="STM32F407 Cortex-M4 Scrambler Word Solver Architecture"
-     width="100%">
-</p>
+![STM32F407 Running Architecture](images/stm32f407_running_diagram.png)
 
 ---
 
