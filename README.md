@@ -1,13 +1,5 @@
 # STM32F407 Cortex-M4 — Scrambler Word Solver
 
-## System Running Architecture
-
-<p align="center">
-  <img src="images/STM32F407_Cortex-M4.png"
-       alt="STM32F407 Cortex-M4 Scrambler Word Solver Running Architecture"
-       width="100%">
-</p>
-
 [![Language](https://img.shields.io/badge/Language-C-blue.svg)](https://en.wikipedia.org/wiki/C_(programming_language))
 [![Processor](https://img.shields.io/badge/Processor-STM32F407VG-green.svg)](https://www.st.com/en/microcontrollers-microprocessors/stm32f407-417.html)
 [![Core](https://img.shields.io/badge/Core-ARM%20Cortex--M4-orange.svg)](https://developer.arm.com/Processors/Cortex-M4)
@@ -20,6 +12,15 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Embedded%20Systems-orange.svg)](https://www.st.com/)
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)]()
+
+---
+## System Running Architecture
+
+<p align="center">
+  <img src="images/STM32F407_Cortex-M4.png"
+       alt="STM32F407 Cortex-M4 Scrambler Word Solver Architecture"
+       width="100%">
+</p>
 
 ---
 
