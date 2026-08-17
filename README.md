@@ -17,7 +17,7 @@
 
 ## System Running Architecture
 
-![STM32F407 Running Architecture](images/stm32f407_running_diagram.png)
+![STM32F407 Running Architecture](images/stm32f407_running_diagram.gif)
 
 ---
 
