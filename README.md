@@ -1449,14 +1449,6 @@ This project demonstrates several concepts commonly used in embedded software de
 
 ---
 
-# Interview Explanation
-
-A concise interview explanation:
-
-> **"I developed a Scrambler Word Solver on the STM32F407 Cortex-M4 using Embedded C. The firmware receives a scrambled word through UART, validates the input, generates a sorted character representation, and searches a dictionary for matching anagrams. I structured the firmware into application, middleware, BSP, driver, HAL and CMSIS layers. I implemented UART, SPI, Flash, GPIO, LCD and timer drivers, along with a ring buffer and fixed-size memory pool. The project also includes a custom linker script, Cortex-M4 startup code, unit tests and production ELF, HEX and BIN firmware outputs."**
-
----
-
 # High-Level Firmware Flow
 
 ```text
@@ -1537,39 +1529,11 @@ A concise interview explanation:
 
 ---
 
-# License
-
-This project is released under the MIT License.
-
-See:
-
-```text
-LICENSE
-```
-
----
-
-# Author
-
-**Embedded Software / Firmware Development Project**
-
-Target:
-
-```text
-STM32F407VG
-ARM Cortex-M4
-Embedded C
-```
-
----
-
 ## GitHub Repository
 
 Repository:
 
 **Scrambler Word Solver — STM32F407 Cortex-M4**
-
-[https://github.com/jsramesh1990/Scrambler_Word_Solver](https://github.com/jsramesh1990/Scrambler_Word_Solver)
 
 ---
 
@@ -1627,32 +1591,3 @@ Repository:
 
 **Built with Embedded C for ARM Cortex-M4.**
 
-````
-
-### One important GitHub recommendation
-
-Your current project is already structured well. I would make the repository root look exactly like:
-
-```text
-STM32F407_Cortex-M4/
-├── application/
-├── bsp/
-├── build/
-├── cmsis/
-├── data/
-├── docs/
-├── drivers/
-├── hal/
-├── include/
-├── linker/
-├── middleware/
-├── startup/
-├── tests/
-├── details.md
-├── LICENSE
-├── Makefile
-├── README.md
-└── tree
-````
-
-I would **keep `build/` in the repository only if you intentionally want to show example/generated artifacts**. For a professional firmware repository, generated `.elf`, `.hex`, `.bin`, `.map`, and `obj/` are usually better excluded with `.gitignore`, while documenting how to regenerate them with the Makefile.
