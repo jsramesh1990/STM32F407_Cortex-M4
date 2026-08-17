@@ -15,9 +15,9 @@
 
 ---
 
-## System Running Architecture
+## Runtime Flow — Animated
 
-![STM32F407 Running Architecture](images/stm32f407_running_diagram.gif)
+![STM32F407 Runtime Flow](images/stm32f407_runtime_flow_animated.gif)
 
 ---
 
