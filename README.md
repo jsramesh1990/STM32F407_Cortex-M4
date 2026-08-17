@@ -14,6 +14,7 @@
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)]()
 
 ---
+
 ## System Running Architecture
 
 <p align="center">
