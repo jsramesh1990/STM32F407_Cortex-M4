@@ -1,0 +1,153 @@
+Yes. `scrambler_stm32.map` is a **generated linker map file**. You should **not manually write it** if you're using the Makefile/linker. The linker generates it when you build:
+
+```bash
+make
+```
+
+Your command:
+
+```text
+-Wl,-Map=build/scrambler_stm32.map
+```
+
+creates:
+
+```text
+build/scrambler_stm32.map
+```
+
+### What this file contains
+
+For your STM32F407 project, it will contain information like:
+
+```text
+STM32F407 Cortex-M4
+        |
+        +-- Flash
+        |    +-- .isr_vector
+        |    +-- .text
+        |    +-- .rodata
+        |
+        +-- RAM
+             +-- .data
+             +-- .bss
+             +-- heap
+             +-- stack
+```
+
+A simplified example of what the map looks like:
+
+```text
+Memory Configuration
+
+Name             Origin      Length
+FLASH            0x08000000  0x00100000
+RAM              0x20000000  0x00030000
+
+
+Linker script and memory map
+
+.text           0x08000000    0x00012000
+
+                0x08000000    startup_stm32f407xx.o
+                0x08000100    Reset_Handler
+
+                0x08001000    main.o
+                0x08001500    board.o
+                0x08001800    clock.o
+
+                0x08002000    scrambler.o
+                0x08003000    input_manager.o
+                0x08004000    dictionary.o
+                0x08005000    result_manager.o
+
+.rodata         0x08012000    0x00008000
+
+                dictionary data
+                constant strings
+
+
+.data           0x20000000    0x00001000
+
+                initialized variables
+
+
+.bss            0x20001000    0x00002000
+
+                UART buffers
+                result buffers
+                runtime variables
+
+
+.heap           0x20003000
+
+.stack          0x20020000
+```
+
+The **actual addresses and sizes will be determined by your source code and linker script**, so don't manually create those values.
+
+### Why this file is important in your interview
+
+You can say:
+
+> **"I use the linker map file to analyze Flash and SRAM consumption and identify which modules or symbols are consuming memory."**
+
+For your Scrambler project, particularly check:
+
+```text
+dictionary.o
+scrambler.o
+.bss
+.rodata
+.data
+```
+
+because the dictionary can consume significant Flash/RAM.
+
+### Generate it
+
+From:
+
+```bash
+cd STM32F407_Cortex-M4
+```
+
+run:
+
+```bash
+make clean
+make
+```
+
+Then:
+
+```bash
+ls -lh build/scrambler_stm32.map
+```
+
+To inspect it:
+
+```bash
+less build/scrambler_stm32.map
+```
+
+Or search for your application:
+
+```bash
+grep -n "scrambler.o" build/scrambler_stm32.map
+```
+
+```bash
+grep -n "dictionary.o" build/scrambler_stm32.map
+```
+
+```bash
+grep -n "\.text" build/scrambler_stm32.map
+```
+
+```bash
+grep -n "\.bss" build/scrambler_stm32.map
+```
+
+**So keep `scrambler_stm32.map` in `build/`, but don't create the file yourself—the linker should generate it.**
+

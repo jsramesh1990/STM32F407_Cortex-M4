@@ -1,0 +1,89 @@
+STM32F407_Cortex-M4
+│
+├── README.md
+├── Makefile
+├── linker/
+│   └── STM32F407VG_FLASH.ld
+│
+├── startup/
+│   └── startup_stm32f407xx.s
+│
+├── include/
+│   ├── main.h
+│   ├── config.h
+│   ├── types.h
+│   └── error.h
+│
+├── application/
+│   ├── scrambler.c
+│   ├── scrambler.h
+│   ├── input_manager.c
+│   ├── input_manager.h
+│   ├── dictionary.c
+│   ├── dictionary.h
+│   ├── result_manager.c
+│   └── result_manager.h
+│
+├── middleware/
+│   ├── memory_pool.c
+│   ├── memory_pool.h
+│   ├── string_utils.c
+│   ├── string_utils.h
+│   ├── ring_buffer.c
+│   └── ring_buffer.h
+│
+├── drivers/
+│   ├── uart/
+│   │   ├── uart.c
+│   │   └── uart.h
+│   │
+│   ├── spi/
+│   │   ├── spi.c
+│   │   └── spi.h
+│   │
+│   ├── flash/
+│   │   ├── flash.c
+│   │   └── flash.h
+│   │
+│   ├── gpio/
+│   │   ├── gpio.c
+│   │   └── gpio.h
+│   │
+│   ├── timer/
+│   │   ├── timer.c
+│   │   └── timer.h
+│   │
+│   └── lcd/
+│       ├── lcd.c
+│       └── lcd.h
+│
+├── bsp/
+│   ├── board.c
+│   ├── board.h
+│   ├── clock.c
+│   └── clock.h
+│
+├── cmsis/
+│   └── STM32F4xx/
+│
+├── hal/
+│   ├── stm32f4xx_hal.c
+│   └── stm32f4xx_hal.h
+│
+├── data/
+│   ├── words.txt
+│   └── words.bin
+│
+├── tests/
+│   ├── test_scrambler.c
+│   ├── test_dictionary.c
+│   ├── test_input.c
+│   └── test_string_utils.c
+│
+├── docs/
+│   ├── architecture.md
+│   ├── memory_map.md
+│   ├── uart_protocol.md
+│   └── testing.md
+│
+└── build/
