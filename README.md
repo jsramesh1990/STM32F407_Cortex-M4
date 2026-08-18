@@ -14,46 +14,7 @@
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)]()
 
 ---
-
-## Embedded Linux Boot Process
-
-The following animation demonstrates the Linux boot sequence step by step.  
-Each stage is displayed long enough to clearly understand the boot flow.
-
-**Power ON → U-Boot → Linux Kernel → Root Filesystem → Peripherals → Login → System Ready**
-
-![Embedded Linux Boot Process](./images/embedded-linux-boot.gif)
-
-### Boot Sequence
-
-1. **Power ON** — Hardware power-up
-2. **U-Boot** — Bootloader initializes hardware and loads the kernel
-3. **Linux Kernel** — Kernel starts CPU, memory, scheduler, and drivers
-4. **Root Filesystem** — Linux mounts the root filesystem
-5. **Peripherals** — UART, GPIO, I2C, SPI, USB, Ethernet initialization
-6. **Login / Init** — `init/systemd` starts userspace services
-7. **System Ready** — Linux login prompt becomes available
-
-> **Note:** The animation is intentionally slowed down so that each boot stage can be easily read and understood.
-
-
-## Embedded Linux Boot Process
-
-The following animation demonstrates the Linux boot sequence:
-
-**Power ON → U-Boot → Linux Kernel → Root Filesystem → Peripherals → Login → System Ready**
-
-![Embedded Linux Boot Process](./images/embedded-linux-boot.gif)
-
----
-
-## Embedded Linux Boot Animation - Output
-
-![Linux Boot Output](./images/output.gif)
-
----
-
-## Embedded Linux Boot Process
+### Embedded Linux Boot Process
 
 The following animation demonstrates the Linux boot sequence:
 
