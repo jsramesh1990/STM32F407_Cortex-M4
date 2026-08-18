@@ -36,9 +36,13 @@ The following animation demonstrates the Linux boot sequence:
 
 ---
 
-## STM32F407 Runtime Flow
+## Embedded Linux Boot Process
 
-![STM32F407 Runtime Flow](./images/stm32f407_runtime_flow_animated.gif)
+The following animation demonstrates the Linux boot sequence:
+
+**Power ON → U-Boot → Linux Kernel → Root Filesystem → Peripherals → Login → System Ready**
+
+![Embedded Linux Boot Process](./images/embedded-linux-boot.gif)
 
 
 ---
