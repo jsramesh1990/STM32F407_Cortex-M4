@@ -14,9 +14,7 @@
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)]()
 
 ---
-## STM32F407 Scrambler Firmware Flow
-
-The following animation demonstrates the complete embedded firmware execution flow:
+## STM32F407 Scrambler Flow
 
 **Power ON → Reset → Startup → SystemInit → main() → BSP → Drivers → Middleware → Scrambler → Dictionary → UART/LCD Output → Repeat**
 
