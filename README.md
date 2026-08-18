@@ -13,7 +13,14 @@
 [![Platform](https://img.shields.io/badge/Platform-Embedded%20Systems-orange.svg)](https://www.st.com/)
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)]()
 
+---
+## STM32F407 Scrambler Firmware Flow
 
+The following animation demonstrates the complete embedded firmware execution flow:
+
+**Power ON → Reset → Startup → SystemInit → main() → BSP → Drivers → Middleware → Scrambler → Dictionary → UART/LCD Output → Repeat**
+
+![STM32F407 Scrambler Firmware Flow](./images/stm32_scrambler_flow.gif)
 ---
 
 ## Table of Contents
