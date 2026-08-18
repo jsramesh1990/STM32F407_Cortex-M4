@@ -13,15 +13,6 @@
 [![Platform](https://img.shields.io/badge/Platform-Embedded%20Systems-orange.svg)](https://www.st.com/)
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)]()
 
----
-### Embedded Linux Boot Process
-
-The following animation demonstrates the Linux boot sequence:
-
-**Power ON → U-Boot → Linux Kernel → Root Filesystem → Peripherals → Login → System Ready**
-
-![Embedded Linux Boot Process](./images/embedded-linux-boot.gif)
-
 
 ---
 
